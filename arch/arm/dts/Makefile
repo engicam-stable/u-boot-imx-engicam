@@ -970,8 +970,6 @@ dtb-$(CONFIG_ARCH_IMX8M) += \
 	imx8mm-ddr4-val.dtb \
 	imx8mm-evk.dtb \
 	imx8mm-ab2.dtb \
-	imx8mm-icore-mx8mm-ctouch2.dtb \
-	imx8mm-icore-mx8mm-edimm2.2.dtb \
 	imx8mm-kontron-n801x-s.dtb \
 	imx8mm-kontron-n801x-s-lvds.dtb \
 	imx8mm-venice.dtb \
@@ -981,6 +979,7 @@ dtb-$(CONFIG_ARCH_IMX8M) += \
 	imx8mm-venice-gw7901.dtb \
 	imx8mm-venice-gw7902.dtb \
 	imx8mm-verdin.dtb \
+	imx8mm-icore.dtb \
 	phycore-imx8mm.dtb \
 	imx8mn-ddr3l-evk.dtb \
 	imx8mn-ddr4-evk.dtb \
