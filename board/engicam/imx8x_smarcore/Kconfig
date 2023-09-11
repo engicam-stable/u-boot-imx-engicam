@@ -1,0 +1,17 @@
+if TARGET_IMX8XD_SMARCORE || TARGET_IMX8XQ_SMARCORE
+
+config SYS_BOARD
+	default "imx8x_smarcore"
+
+config SYS_VENDOR
+	default "engicam"
+
+config SYS_CONFIG_NAME
+	default "imx8x_smarcore"
+
+config IMX_CONFIG
+	default "board/engicam/imx8x_smarcore/imximage.cfg"
+
+source "board/freescale/common/Kconfig"
+
+endif

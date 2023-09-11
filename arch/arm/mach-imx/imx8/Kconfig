@@ -148,6 +148,11 @@ config TARGET_ICOREMX8X
 	select BOARD_LATE_INIT
 	select IMX8QXP
 
+config TARGET_IMX8XQ_SMARCORE
+	bool "Support Smarcore i.MX8X Quad"
+	select BOARD_LATE_INIT
+	select IMX8QXP
+
 config TARGET_IMX8QXP_LPDDR4_VAL
 	bool "Support i.MX8QXP lpddr4 validation board"
 	select BOARD_LATE_INIT
@@ -215,6 +220,8 @@ endchoice
 source "board/freescale/imx8qm_mek/Kconfig"
 source "board/freescale/imx8qxp_mek/Kconfig"
 source "board/congatec/cgtqmx8/Kconfig"
+source "board/engicam/imx8qxp_icore/Kconfig"
+source "board/engicam/imx8x_smarcore/Kconfig"
 source "board/freescale/imx8qm_val/Kconfig"
 source "board/freescale/imx8qxp_val/Kconfig"
 source "board/freescale/imx8dxl_phantom_mek/Kconfig"
@@ -225,7 +232,6 @@ source "board/toradex/apalis-imx8/Kconfig"
 source "board/toradex/colibri-imx8x/Kconfig"
 source "board/toradex/apalis-imx8x/Kconfig"
 source "board/siemens/capricorn/Kconfig"
-source "board/engicam/imx8qxp_icore/Kconfig"
 
 config IMX_SNVS_SEC_SC
 	bool "Support SNVS configuration"
