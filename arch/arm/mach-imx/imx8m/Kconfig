@@ -348,6 +348,16 @@ config TARGET_IMX8MP_ICORE_FASTETH
 	select MISC
 	select SPL_CRYPTO_SUPPORT if SPL
 
+config TARGET_IMX8MP_SMARCORE
+	bool "imx8mp smarcore Engicam module"
+	select IMX8MP
+	select SUPPORT_SPL
+	select IMX8M_LPDDR4
+	select FSL_CAAM
+	select FSL_BLOB
+	select MISC
+	select SPL_CRYPTO_SUPPORT if SPL
+
 config TARGET_IMX8MP_VENICE
 	bool "Support Gateworks Venice iMX8M Plus module"
 	select BINMAN
@@ -491,6 +501,7 @@ source "board/dhelectronics/dh_imx8mp/Kconfig"
 source "board/engicam/imx8mm/Kconfig"
 source "board/engicam/imx8mp/Kconfig"
 source "board/engicam/imx8mp_icore/Kconfig"
+source "board/engicam/imx8mp_smarcore/Kconfig"
 source "board/freescale/imx8mq_evk/Kconfig"
 source "board/freescale/imx8mq_val/Kconfig"
 source "board/freescale/imx8mm_ab2/Kconfig"
