@@ -1037,8 +1037,7 @@ dtb-$(CONFIG_ARCH_IMX8M) += \
 	imx8mm-ddr4-val.dtb \
 	imx8mm-evk.dtb \
 	imx8mm-ab2.dtb \
-	imx8mm-icore-mx8mm-ctouch2.dtb \
-	imx8mm-icore-mx8mm-edimm2.2.dtb \
+	imx8mm-icore.dtb \
 	imx8mm-kontron-bl.dtb \
 	imx8mm-kontron-bl-osm-s.dtb \
 	imx8mm-mx8menlo.dtb \

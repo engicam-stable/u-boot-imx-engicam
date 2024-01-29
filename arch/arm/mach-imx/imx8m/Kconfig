@@ -158,9 +158,8 @@ config TARGET_IMX8MM_DDR4_AB2
 	select FSL_BLOB
 	select SPL_CRYPTO if SPL
 
-config TARGET_IMX8MM_ICORE_MX8MM
+config TARGET_IMX8MM_ICORE
 	bool "Engicam i.Core MX8M Mini SOM"
-	select BINMAN
 	select IMX8MM
 	select SUPPORT_SPL
 	select IMX8M_LPDDR4
@@ -498,7 +497,7 @@ source "board/cloos/imx8mm_phg/Kconfig"
 source "board/compulab/imx8mm-cl-iot-gate/Kconfig"
 source "board/data_modul/imx8mm_edm_sbc/Kconfig"
 source "board/dhelectronics/dh_imx8mp/Kconfig"
-source "board/engicam/imx8mm/Kconfig"
+source "board/engicam/imx8mm_icore/Kconfig"
 source "board/engicam/imx8mp/Kconfig"
 source "board/engicam/imx8mp_icore/Kconfig"
 source "board/engicam/imx8mp_smarcore/Kconfig"
