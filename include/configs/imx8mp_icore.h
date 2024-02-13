@@ -78,7 +78,7 @@
 #endif
 
 #ifdef CONFIG_IMX8MP_1GB_LPDDR4
-	#define CMA_VALUE " cma=128M "	
+	#define CMA_VALUE " cma=512M "	
 #else	
 	#define CMA_VALUE " "
 #endif
