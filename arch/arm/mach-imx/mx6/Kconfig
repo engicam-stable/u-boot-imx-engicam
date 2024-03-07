@@ -465,6 +465,13 @@ config TARGET_MX6SOLOSABRESD
     select TARGET_MX6SABRESD_COMMON
     depends on MX6S
 
+config TARGET_ICOREM6
+	bool "icorem6"
+	select DM
+	select DM_THERMAL
+	select SUPPORT_SPL
+	select SYS_FSL_ERRATUM_ESDHC135
+
 config TARGET_MX6SLEVK
 	bool "mx6slevk"
 	depends on MX6SL
@@ -868,6 +875,7 @@ source "board/bticino/mamoj/Kconfig"
 source "board/compulab/cm_fx6/Kconfig"
 source "board/dhelectronics/dh_imx6/Kconfig"
 source "board/embest/mx6boards/Kconfig"
+source "board/engicam/icorem6/Kconfig"
 source "board/engicam/imx6q/Kconfig"
 source "board/engicam/imx6ul/Kconfig"
 source "board/engicam/microgea-mx6ull/Kconfig"

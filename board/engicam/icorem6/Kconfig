@@ -1,0 +1,31 @@
+if TARGET_ICOREM6
+
+config SYS_BOARD
+	default "icorem6"
+
+config SYS_VENDOR
+	default "engicam"
+
+config SYS_SOC
+	default "mx6"
+
+config SYS_CONFIG_NAME
+	default "icorem6"
+
+config SYS_BOOT_SD
+	bool "Boot from SD card"
+	help
+	  This option allows the u-boot image to be
+	  booted from an SD card.
+
+config SYS_BOOT_NAND
+	bool "Boot from NAND memory"
+	help
+	  This option allows the u-boot image to be
+	  booted from Nand memory device.
+
+config IMX_CONFIG
+	default "board/engicam/icorem6/icorem6dl.cfg"
+
+endif
+
