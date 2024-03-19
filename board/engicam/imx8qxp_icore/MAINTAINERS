@@ -1,0 +1,6 @@
+i.MX8QXP ICORE
+M:	Support <support@engicam.com>
+S:	Maintained
+F:	board/engicam/imx8qxp_icore/
+F:	include/configs/imx8qxp_icore.h
+F:	configs/imx8qxp_icore_defconfig
