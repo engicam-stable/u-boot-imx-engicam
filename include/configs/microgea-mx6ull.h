@@ -17,7 +17,7 @@
 #include "imx_env.h"
 
 #define PHYS_SDRAM_SIZE	SZ_512M
-#define BOOTARGS_CMA_SIZE   "cma=64M "
+#define BOOTARGS_CMA_SIZE   "cma=16M "
 
 #undef CONFIG_LDO_BYPASS_CHECK
 
