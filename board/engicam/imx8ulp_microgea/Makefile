@@ -8,6 +8,8 @@ obj-y += spl.o
 obj-$(CONFIG_TARGET_IMX8ULP_9X9_EVK) += lpddr4_timing_9x9.o
 ifdef CONFIG_IMX8ULP_ND_MODE
 obj-$(CONFIG_TARGET_IMX8ULP_EVK) += lpddr4_timing_266.o
+else ifdef CONFIG_IMX8ULP_1GB_LPDDR4
+obj-$(CONFIG_TARGET_IMX8ULP_MICROGEA) += lpddr4_1gb_timing.o
 else
 obj-$(CONFIG_TARGET_IMX8ULP_MICROGEA) += lpddr4_timing.o
 endif

@@ -4,6 +4,9 @@ menu "i.MX8ULP DDR controllers"
 config IMX8ULP_DRAM
 	bool "imx8m dram"
 
+config IMX8ULP_1GB_LPDDR4
+	bool "imx8m 1GB LPDDR4"
+
 config IMX8ULP_DRAM_PHY_PLL_BYPASS
 	bool "Enable the DDR PHY PLL bypass mode, so PHY clock is from DDR_CLK "
 	depends on IMX8ULP_DRAM
