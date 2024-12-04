@@ -11,6 +11,12 @@ config IMX9_LPDDR4X
 	help
 	  Select the i.MX9 LPDDR4/4X driver support on i.MX9 SOC.
 
+config IMX9_LPDDR4X_1GB
+	bool "imx9 lpddr4 and lpddr4x 1GB"
+	select IMX9_DRAM
+	help
+	  Select the i.MX9 LPDDR4/4X driver support on i.MX9 SOC.
+
 config IMX9_DRAM_PM_COUNTER
 	bool "imx9 DDRC performance monitor counter"
 	default y

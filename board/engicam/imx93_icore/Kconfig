@@ -11,9 +11,16 @@ config SYS_CONFIG_NAME
 
 config IMX93_ICORE
 	bool "Using LPDDR4X Timing and PMIC voltage"
-	default y
+	default n
 	select IMX9_LPDDR4X
 	help
 	  Select the LPDDR4X timing and 0.6V VDDQ
+
+config IMX93_ICORE_1GB
+	bool "Using LPDDR4X Timing for 1GB RAM and PMIC voltage"
+	default n
+	select IMX9_LPDDR4X_1GB
+	help
+	  Select the LPDDR4X timing for 1GB RAM and 0.6V VDDQ
 
 endif

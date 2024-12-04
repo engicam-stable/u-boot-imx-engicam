@@ -157,8 +157,11 @@
 
 #define CFG_SYS_SDRAM_BASE           0x80000000
 #define PHYS_SDRAM                      0x80000000
-#define PHYS_SDRAM_SIZE			0x80000000 /* 2GB DDR */
-
+#ifdef CONFIG_IMX9_LPDDR4X_1GB
+	#define PHYS_SDRAM_SIZE			0x40000000 /* 1GB DDR */
+#else
+	#define PHYS_SDRAM_SIZE			0x80000000 /* 2GB DDR */
+#endif
 /* Monitor Command Prompt */
 #define CONFIG_SYS_BARGSIZE		CONFIG_SYS_CBSIZE
 
