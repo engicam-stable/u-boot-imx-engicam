@@ -97,6 +97,8 @@ int power_init_board(void)
 		/* Set buck3 to 1.1v OD */
 		upower_pmic_i2c_write(0x22, 0x28);
 
+		/* Set RESETKEY_TIMER 100 ms*/
+		upower_pmic_i2c_write(0x0B, 0x40);
 	}
 
 	return 0;
